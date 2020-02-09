@@ -117,8 +117,8 @@ def interactive(opt, print_parser=None):
             # dump world acts to file
             world_logger.reset()  # add final acts to logs
             base_outfile = opt['report_filename'].split('.')[0]
-            outfile = base_outfile + f'_interactive_replies.jsonl'
-            world_logger.write(outfile)
+            outfile = base_outfile + f'_replies.json'
+            world_logger.write_forever_format(outfile)
         if opt.get('display_examples'):
             print("---")
             print(world.display())

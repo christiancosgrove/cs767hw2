@@ -151,3 +151,11 @@ class WorldLogger:
             self.write_jsonl_format(outfile)
         else:
             self.write_parlai_format(outfile)
+
+    def write_forever_format(self, outfile):
+        with open(outfile, 'w') as of:
+            out = []
+            for episode in self._logs:
+                out += [{'sender':elem['id'], 'type':'text', 'text':elem['text']} for elem in dialog]
+            json_episode = json.dumps(out, indent=4)
+            of.write(json_episode + '\n')
