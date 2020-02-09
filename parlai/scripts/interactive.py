@@ -112,12 +112,8 @@ def interactive(opt, print_parser=None):
         world.parley()
         if world_logger is not None:
             world_logger.log(world)
-            try:
-                report = world.report()
-                _save_eval_stats(opt, report)
-            except Exception as e:
-                print(e)
-                pass
+            report = world.report()
+            _save_eval_stats(opt, report)
         if opt.get('display_examples'):
             print("---")
             print(world.display())
