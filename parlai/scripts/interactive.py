@@ -50,6 +50,7 @@ def setup_args(parser=None):
         default=True,
         help='Create interactive version of task',
     )
+    WorldLogger.add_cmdline_args(parser)
     parser.set_defaults(interactive_mode=True, task='interactive')
     LocalHumanAgent.add_cmdline_args(parser)
     return parser
