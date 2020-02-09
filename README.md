@@ -21,6 +21,8 @@ Evaluated on validation set:
 #### Example outputs
 A few example outputs (in Forever format) have been recorded in `test_outputs`.
 
+Unfortunately, our model output is **extremely poor**. Essentially the model is only able to output "I don't know" repeatedly. The output does not change--no matter the input.
+
 **Perplexity:** 340.9
 
 ## Instructions
