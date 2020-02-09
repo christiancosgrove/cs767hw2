@@ -151,7 +151,7 @@ class WorldLogger:
             self.write_jsonl_format(outfile)
         else:
             self.write_parlai_format(outfile)
-
+    
     def write_forever_format(self, outfile):
         with open(outfile, 'w') as of:
             out = []

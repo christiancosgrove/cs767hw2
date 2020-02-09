@@ -17,6 +17,10 @@ Evaluated on validation set:
 `[ Finished evaluating tasks ['twitter'] using datatype valid ]
 {'exs': 10405, 'accuracy': 9.610764055742432e-05, 'f1': 0.055454937351312183, 'bleu-4': 0.0001680273494616013, 'lr': 1, 'total_train_updates': 176783, 'gpu_mem_percent': 0.29, 'loss': 6075.0, 'token_acc': 0.2306, 'nll_loss': 5.832, 'ppl': 340.9}`
 
+
+#### Example outputs
+A few example outputs (in Forever format) have been recorded in `test_outputs`.
+
 **Perplexity:** 340.9
 
 ## Instructions
@@ -30,4 +34,8 @@ Evaluated on validation set:
 
 ### Chat
 
-`python -m parlai.scripts.interactive -m seq2seq/seq2seq -mf hello_seq2seq.checkpoint`
+**Note**: We modified `world_logging.py` to include an option to print to the [Forever chat specification](https://github.com/jkeen/forever-chat-format).
+
+`python -m parlai.scripts.interactive -m seq2seq/seq2seq -mf hello_seq2seq.checkpoint --log-keep-fields all --report_filename test.json --save_world_logs True`
+
+The JSON output will be recorded in `test_replies.json`.
