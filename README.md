@@ -1,5 +1,7 @@
 # Deep Learning for Automated Discourse - Homework 2
 
+**Note: you need Git LFS to download the model files**
+
 Our fork of [ParlAI](https://github.com/facebookresearch/ParlAI) with included model files for homework 2
 
 ## Our Model
