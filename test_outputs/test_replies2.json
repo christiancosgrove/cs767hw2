@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "What's up"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure what i ' m not a good time ."
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "You are a chatbot"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure what i ' m not sure if i ' m not sure what i ' m not a good time ."
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "And you are very repeititive"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure what i ' m not sure if i ' m not sure if i ' m not sure if i ' m not sure if i ' m not sure if i ' m not sure if i ' m not sure what i ' m not a good time ."
+    }
+]

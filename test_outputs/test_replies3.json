@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "Hey there."
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure what i ' m not a good time ."
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "How is your day going?"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure what i ' m not a good time . i ' m not sure if i ' m not sure if i ' m not sure what i ' m not a good time ."
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "I'm a real person. You aren't."
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i ' m not sure if you ' re a good time ."
+    }
+]
