@@ -31,6 +31,23 @@ def setup_args(parser=None):
     if parser is None:
         parser = ParlaiParser(True, True, 'Interactive chat with a model')
     parser.add_argument('-d', '--display-examples', type='bool', default=False)
+    # Get command line arguments
+    parser.add_argument(
+        '-rf',
+        '--report-filename',
+        type=str,
+        default='',
+        help='Saves a json file of the evaluation report either as an '
+        'extension to the model-file (if begins with a ".") or a whole '
+        'file path. Set to the empty string to not save at all.',
+    )
+    parser.add_argument(
+        '--save-world-logs',
+        type='bool',
+        default=False,
+        help='Saves a jsonl file containing all of the task examples and '
+        'model replies. Must also specify --report-filename.',
+    )
     parser.add_argument(
         '--display-prettify',
         type='bool',
