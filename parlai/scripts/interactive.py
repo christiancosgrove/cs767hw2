@@ -119,11 +119,11 @@ def interactive(opt, print_parser=None):
             print("EPOCH DONE")
             break
 
-        try:
-            report = world.report()
-            _save_eval_stats(opt, report)
-        except:
-            pass
+        # try:
+        #     report = world.report()
+        #     _save_eval_stats(opt, report)
+        # except:
+        #     pass
 
 if __name__ == '__main__':
     random.seed(42)
