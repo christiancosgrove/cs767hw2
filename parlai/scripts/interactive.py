@@ -74,6 +74,18 @@ def setup_args(parser=None):
     return parser
 
 
+def _save_eval_stats(opt, report):
+    report_fname = opt['report_filename']
+    if report_fname == '':
+        return
+    if report_fname.startswith('.'):
+        report_fname = opt['model_file'] + report_fname
+
+    # Save report
+    with open(report_fname, 'w') as f:
+        print(f'[ Saving model report to {report_fname} ... ]')
+        json.dump({'opt': opt, 'report': report}, f, indent=4)
+
 def interactive(opt, print_parser=None):
     if print_parser is not None:
         if print_parser is True and isinstance(opt, ParlaiParser):
@@ -106,6 +118,9 @@ def interactive(opt, print_parser=None):
         if world.epoch_done():
             print("EPOCH DONE")
             break
+
+        report = world.report()
+        _save_eval_stats(opt, report)
 
 
 if __name__ == '__main__':
