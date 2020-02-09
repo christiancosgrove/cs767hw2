@@ -148,6 +148,6 @@ class WorldLogger:
 
     def write(self, outfile, file_format='jsonl'):
         if file_format == 'jsonl':
-            self.write_json_format(outfile)
+            self.write_jsonl_format(outfile)
         else:
             self.write_parlai_format(outfile)
