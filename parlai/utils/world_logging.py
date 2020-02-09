@@ -156,7 +156,6 @@ class WorldLogger:
         with open(outfile, 'w') as of:
             out = []
             for episode in self._logs:
-                print(episode)
                 out += [{'sender':elem['id'], 'type':'text', 'text':elem['text']} for elem in episode[0]]
             json_episode = json.dumps(out, indent=4)
             of.write(json_episode + '\n')
