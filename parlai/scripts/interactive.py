@@ -115,7 +115,7 @@ def interactive(opt, print_parser=None):
             try:
                 report = world.report()
                 _save_eval_stats(opt, report)
-            except e:
+            except Exception as e:
                 print(e)
                 pass
         if opt.get('display_examples'):
