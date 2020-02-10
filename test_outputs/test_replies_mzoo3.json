@@ -1,0 +1,42 @@
+[
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "hello there"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am sorry to hear that"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "what's up"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i know i am not sure if i did not know"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "you are very repetitive"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am sorry to hear that"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "what's your name?"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am not sure what you mean"
+    }
+]

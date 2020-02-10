@@ -1,0 +1,52 @@
+[
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "hi there"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am good thanks for asking"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "how are you doing today?"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i'm good thanks for asking"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "what's your name?"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am good thanks for asking"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "you are very repetitive"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "yeah i do not know what that means"
+    },
+    {
+        "sender": "localHuman",
+        "type": "text",
+        "text": "okay then"
+    },
+    {
+        "sender": "Seq2Seq",
+        "type": "text",
+        "text": "i am very sorry to hear that"
+    }
+]
